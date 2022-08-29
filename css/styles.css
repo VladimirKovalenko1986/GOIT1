@@ -20,19 +20,66 @@
 }
 
 .page {
+  /*  Это боди который тимеет класс */
   background-color: var(--primary-bg-color);
   /* цвет фона страницы применяется */
   color: var(--primary-text-color);
+
+  font-family: Montserrat, sans-serif;
+  /* устанавливаем шрифт для всей страницы */
+  letter-spacing: -0.015em;
+  /* Растояние между элементами в шрифте нужно обязательно смотреть на макете */
+
+  font-size: 18px;
+  line-height: 1.67;
+  /* делаем когда основная часть текста таким шрифтом в данном случае у нас все обзацы */
 }
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Comfortaa; */
+/* На тот случай если весь текст один стиль текста а заголовки другим */
+/* } */
 
 .list {
   list-style: none;
   /*  МЫ его можем дописывать в любой список чтобы убрать точки или цифры нумерации */
+  text-decoration: none;
 }
 
+/* Logo */
 .logo {
   color: var(--title-text-color);
+  font-family: Comfortaa, cursive;
+  /* Курсивный шрифт прописывем cursive */
+  text-decoration: none;
+  /* Убираем подчеркивание */
+
+  /* font-style: normal; */
+  /* если стоит normal можно его убрать так как это по умолчанию */
+  /* font-weight: 400; */
+  /* то же можно убрать так как по умолчанию 400 */
+  font-size: 28px;
+  line-height: 1.14;
+  /* Ставим множитель т е  line-height делим на font-size и получаем множитель*/
+
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+  /* letter-spacing: -0.015em; */
+  /* Это мы тоже все удаляем */
+  /* Мы все скопировали из макета и смотрим что оставить */
 }
+
+/* .button {
+    font-family: inherit;
+    
+    Если мы хотим чтобы кнопка тоже была таким же шрифтом, потому как она не унаследуеться
+} */
 
 .logo:hover {
   color: var(--accent-color);
@@ -41,6 +88,11 @@
 /* Site nav */
 .site-nav .link {
   color: var(--accent-color);
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -56,17 +108,44 @@
 /* Hero */
 .hero-title {
   color: var(--title-text-color);
+
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.43;
+  text-align: center;
 }
 /* Идет отдельно всегда */
 
 .section-title {
   color: var(--title-text-color);
+
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
 }
 /* Для всех секций main */
 
-.feature-list .title {
-  color: var(--title-text-color);
+.section-deskription {
+  font-size: 36px;
+  line-height: 1.39;
 }
+
+.feature-list .title,
+.work-list .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+}
+/* соеденили два класса так как они имеют одинаковые свойства */
+
+/* .feature-list .text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+} Не нужен так как мы применили стиль к body */
 
 /* h1,
 h2,
@@ -77,22 +156,16 @@ h6 {
   color: #000000;
 } - можно так если все заголовки одним цветом*/
 
-/* Work */
-
-.work-list .title {
-  color: var(--title-text-color);
-}
-
 /* Button */
 
 .button {
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
 
-  font-size: 24px;
-  padding: 12px 24px;
-  display: inline-block;
-  border: 1px solid black;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
 }
 
 .button.primary {
