@@ -16,6 +16,26 @@
   text-decoration: none;
 }
 
+.link-btn {
+  background-color: var(--color-primery-bgc);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  border: 1px solid var(--color-nav-btn);
+  border-radius: 6px;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--color-primery-bgc);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.2;
+  border: 1px solid var(--color-nav-btn);
+  border-radius: 6px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -27,4 +47,56 @@
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: 1px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-secondary-text);
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: -0.015em;
+}
+
+/* Header */
+
+.logo {
+  font-family: "Comfortaa", sans-serif;
+  color: var(--color-primery-text);
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.header-link {
+  color: var(--color-nav-btn);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.header-link-login {
+  color: var(--color-nav-btn);
+}
+
+.header-link-register {
+  color: var(--color-primery-bgc);
+  background-color: var(--color-nav-btn);
+}
+
+/* Main */
+/* Hero */
+
+.hero {
+  text-align: center;
+}
+
+.hero-title {
+  color: var(--color-primery-text);
+  font-size: 56px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.primery-btn {
+  color: var(--color-primery-bgc);
+  background-color: var(--color-nav-btn);
 }
