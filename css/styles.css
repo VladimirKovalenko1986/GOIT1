@@ -156,3 +156,41 @@ body {
 .signup {
   background-color: var(--color-secondary-bgc);
 }
+
+.signup-text {
+  font-size: 36px;
+  line-height: 1.4;
+}
+
+.sacondary-btn {
+  color: var(--color-nav-btn);
+  background-color: var(--color-primery-bgc);
+}
+
+/* Footer */
+
+.footer-link {
+  color: var(--color-secondary-text);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer-link span {
+  color: var(--color-primery-text);
+  font-weight: 700;
+}
+
+.footer-link-login {
+  color: var(--color-nav-btn);
+}
+
+.footer-link-registe {
+  color: var(--color-primery-bgc);
+  background-color: var(--color-nav-btn);
+}
+
+.footer-text, 
+.footer-pre-text {
+  font-size: 15px;
+  line-height: 1.6;
+}
