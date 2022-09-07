@@ -100,3 +100,59 @@ body {
   color: var(--color-primery-bgc);
   background-color: var(--color-nav-btn);
 }
+
+/* Feature */
+
+.feature-title {
+  color: var(--color-primery-text);
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+.feature-item-title {
+  color: var(--color-primery-text);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.feature-item-link {
+  color: var(--color-nav-btn);
+}
+
+/* Work */
+
+.work-bgc {
+  background-color: var(--color-secondary-bgc);
+}
+
+.work-item-title {
+  color: var(--color-primery-text);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/* Advantages */
+
+.advantages {
+}
+
+.advantages-title {
+  color: var(--color-primery-text);
+  text-align: center;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+.advantages-text {
+  font-size: 36px;
+  line-height: 1.4;
+}
+
+/* Signup */
+
+.signup {
+  background-color: var(--color-secondary-bgc);
+}
