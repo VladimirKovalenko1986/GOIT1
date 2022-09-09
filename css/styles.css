@@ -10,6 +10,9 @@
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  /* Сбрасываем для всех списков */
 }
 
 .link {
@@ -22,8 +25,13 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
-  border: 1px solid var(--color-nav-btn);
   border-radius: 6px;
+  padding: 11px 34px;
+  display: inline-block;
+  min-width: 130px;
+  text-align: center;
+  border: 1px solid transparent;
+  /* прозрачная рамка */
 }
 
 .btn {
@@ -59,6 +67,19 @@ body {
 
 /* Header */
 
+.header {
+  background-color: #ccc;
+}
+
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 1440px;
+  outline: 2px solid tomato;
+}
+
 .logo {
   font-family: "Comfortaa", sans-serif;
   color: var(--color-primery-text);
@@ -75,6 +96,7 @@ body {
 
 .header-link-login {
   color: var(--color-nav-btn);
+  border: 1px solid var(--color-nav-btn);
 }
 
 .header-link-register {
@@ -87,6 +109,7 @@ body {
 
 .hero {
   text-align: center;
+  outline: 2px solid tomato;
 }
 
 .hero-title {
@@ -94,6 +117,11 @@ body {
   font-size: 56px;
   line-height: 1.4;
   font-weight: 400;
+  outline: 2px solid blue;
+
+  margin-top: 0;
+  margin-bottom: 40px;
+  /* Сбрасываем его отступы */
 }
 
 .primery-btn {
@@ -103,21 +131,38 @@ body {
 
 /* Feature */
 
+.feature {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .feature-title {
   color: var(--color-primery-text);
   font-size: 48px;
   line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 60px;
+  outline: 2px solid blue;
 }
 
-.feature-item-title {
+.feature-item-title,
+.work-item-title {
   color: var(--color-primery-text);
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.feature-item-text {
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 .feature-item-link {
   color: var(--color-nav-btn);
+  border: 1px solid var(--color-nav-btn);
 }
 
 /* Work */
@@ -126,17 +171,9 @@ body {
   background-color: var(--color-secondary-bgc);
 }
 
-.work-item-title {
-  color: var(--color-primery-text);
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.5;
-}
 
 /* Advantages */
 
-.advantages {
-}
 
 .advantages-title {
   color: var(--color-primery-text);
