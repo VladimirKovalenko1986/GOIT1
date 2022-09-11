@@ -31,7 +31,8 @@
 
     <!-- Header -->
     <header class="header">
-      <nav class="conteiner">
+      <nav class="conteiner main-nav">
+        <!-- Добовляем отдельный класс так как conteiner используется -->
         <a href="./index.html" class="logo link"
           ><img
             src="./img/Logo1.svg"
@@ -163,16 +164,16 @@
                 width="750"
                 class="work-item-img"
               />
-              <h3 class="work-item-title">Sed ut perspiciatis unde omnis</h3>
-              <p class="work-item-text">
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                dolorem.
-              </p>
+              <div class="content">
+                <h3 class="work-item-title">Sed ut perspiciatis unde omnis</h3>
+                <p class="work-item-text">
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                  qui dolorem.
+                </p>
+              </div>
             </li>
-          </ul>
-          <ul class="work-list list">
             <li class="work-item">
               <img
                 src="./img/Image.png"
@@ -180,13 +181,15 @@
                 width="750"
                 class="work-item-img"
               />
-              <h3 class="work-item-title">Sed ut perspiciatis unde omnis</h3>
-              <p class="work-item-text">
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                dolorem.
-              </p>
+              <div class="content">
+                <h3 class="work-item-title">Sed ut perspiciatis unde omnis</h3>
+                <p class="work-item-text">
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                  qui dolorem.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -194,130 +197,134 @@
 
       <!-- Advantages -->
       <section class="advantages">
-        <h2 class="advantages-title">You’re in good company</h2>
-        <p class="advantages-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore
-        </p>
-        <ul class="advantages-list list">
-          <li class="advantages-item">
-            <a
-              href=""
-              rel="noopener norefferer nofollow"
-              class="advantages-item-link"
-              ><img
-                src="./img/image2.svg"
-                alt="Logo company"
-                class="advantages-item-img"
-            /></a>
-          </li>
-          <li class="advantages-item">
-            <a
-              href=""
-              rel="noopener norefferer nofollow"
-              class="advantages-item-link"
-              ><img
-                src="./img/image2.svg"
-                alt="Logo company"
-                class="advantages-item-img"
-            /></a>
-          </li>
-          <li class="advantages-item">
-            <a
-              href=""
-              rel="noopener norefferer nofollow"
-              class="advantages-item-link"
-              ><img
-                src="./img/image2.svg"
-                alt="Logo company"
-                class="advantages-item-img"
-            /></a>
-          </li>
-          <li class="advantages-item">
-            <a
-              href=""
-              rel="noopener norefferer nofollow"
-              class="advantages-item-link"
-              ><img
-                src="./img/image2.svg"
-                alt="Logo company"
-                class="advantages-item-img"
-            /></a>
-          </li>
-          <li class="advantages-item">
-            <a
-              href=""
-              rel="noopener norefferer nofollow"
-              class="advantages-item-link"
-              ><img
-                src="./img/image2.svg"
-                alt="Logo company"
-                class="advantages-item-img"
-            /></a>
-          </li>
-          <li class="advantages-item">
-            <a
-              href=""
-              rel="noopener norefferer nofollow"
-              class="advantages-item-link"
-              ><img
-                src="./img/image2.svg"
-                alt="Logo company"
-                class="advantages-item-img"
-            /></a>
-          </li>
-          <li class="advantages-item">
-            <a
-              href=""
-              rel="noopener norefferer nofollow"
-              class="advantages-item-link"
-              ><img
-                src="./img/image2.svg"
-                alt="Logo company"
-                class="advantages-item-img"
-            /></a>
-          </li>
-          <li class="advantages-item">
-            <a
-              href=""
-              rel="noopener norefferer nofollow"
-              class="advantages-item-link"
-              ><img
-                src="./img/image2.svg"
-                alt="Logo company"
-                class="advantages-item-img"
-            /></a>
-          </li>
-        </ul>
+        <div class="conteiner">
+          <h2 class="advantages-title">You’re in good company</h2>
+          <p class="advantages-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore
+          </p>
+          <ul class="advantages-list list">
+            <li class="advantages-item">
+              <a
+                href=""
+                rel="noopener norefferer nofollow"
+                class="advantages-item-link"
+                ><img
+                  src="./img/image2.svg"
+                  alt="Logo company"
+                  class="advantages-item-img"
+              /></a>
+            </li>
+            <li class="advantages-item">
+              <a
+                href=""
+                rel="noopener norefferer nofollow"
+                class="advantages-item-link"
+                ><img
+                  src="./img/image2.svg"
+                  alt="Logo company"
+                  class="advantages-item-img"
+              /></a>
+            </li>
+            <li class="advantages-item">
+              <a
+                href=""
+                rel="noopener norefferer nofollow"
+                class="advantages-item-link"
+                ><img
+                  src="./img/image2.svg"
+                  alt="Logo company"
+                  class="advantages-item-img"
+              /></a>
+            </li>
+            <li class="advantages-item">
+              <a
+                href=""
+                rel="noopener norefferer nofollow"
+                class="advantages-item-link"
+                ><img
+                  src="./img/image2.svg"
+                  alt="Logo company"
+                  class="advantages-item-img"
+              /></a>
+            </li>
+            <li class="advantages-item">
+              <a
+                href=""
+                rel="noopener norefferer nofollow"
+                class="advantages-item-link"
+                ><img
+                  src="./img/image2.svg"
+                  alt="Logo company"
+                  class="advantages-item-img"
+              /></a>
+            </li>
+            <li class="advantages-item">
+              <a
+                href=""
+                rel="noopener norefferer nofollow"
+                class="advantages-item-link"
+                ><img
+                  src="./img/image2.svg"
+                  alt="Logo company"
+                  class="advantages-item-img"
+              /></a>
+            </li>
+            <li class="advantages-item">
+              <a
+                href=""
+                rel="noopener norefferer nofollow"
+                class="advantages-item-link"
+                ><img
+                  src="./img/image2.svg"
+                  alt="Logo company"
+                  class="advantages-item-img"
+              /></a>
+            </li>
+            <li class="advantages-item">
+              <a
+                href=""
+                rel="noopener norefferer nofollow"
+                class="advantages-item-link"
+                ><img
+                  src="./img/image2.svg"
+                  alt="Logo company"
+                  class="advantages-item-img"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Signup -->
       <section class="signup">
-        <h2 class="visually-hidden">Signup</h2>
-        <p class="signup-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore
-        </p>
-        <ul class="signup-list list">
-          <li>
-            <button
-              type="button"
-              class="primery-btn btn"
-              rel="noopener norefferer nofollow"
-            >
-              Join Today
-            </button>
-          </li>
-          <li>
-            <button
-              type="button"
-              rel="noopener norefferer nofollow"
-              class="sacondary-btn btn"
-            >
-              Contact us
-            </button>
-          </li>
-        </ul>
+        <div class="conteiner">
+          <ul class="signup-list list">
+            <li class="signup-item">
+              <h2 class="visually-hidden">Signup</h2>
+              <p class="signup-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore
+              </p>
+              </li>
+              <li class="signup-item"></li>
+              <button
+                type="button"
+                class="primery-btn btn"
+                rel="noopener norefferer nofollow"
+              >
+                Join Today
+              </button>
+              <button
+                type="button"
+                rel="noopener norefferer nofollow"
+                class="sacondary-btn btn"
+              >
+                Contact us
+              </button>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
