@@ -1,0 +1,81 @@
+.form {
+  width: 600px;
+  outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  /* ставим элементы в колонку */
+  /* outline: 1px solid blue; */
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  margin-bottom: 5px;
+}
+
+.form-input {
+  /* У  input очень много всяких стилей и отступов 
+    мы можем их сбросить*/
+  margin: 0;
+  padding: 10px 20px;
+  /* width: 100%; */
+  /* Делаем если не прописывать display: flex; */
+  border-radius: 3px;
+  border: 1px solid #020202;
+  font-size: 20px;
+}
+
+.form-input::placeholder {
+  color: burlywood;
+  /* стилизайия placeholder */
+  text-align: right;
+  /* Применяется стили текста */
+}
+
+.group {
+  margin-bottom: 20px;
+}
+
+.group-title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.topic-options,
+.experience-options {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.topic-options li {
+  display: flex;
+  align-items: center;
+}
+
+.topic-options input[type="checkbox"] {
+  /* Стелизация checkbox */
+  /* width: 40px;
+  height: 40px; */
+  /* checkbox плохо стилизуется */
+}
+
+.topic-options label {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.topic-options input {
+  margin: 0;
+}
+
+.form .date {
+  padding: 20px 40px;
+
+  border-color: red;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/form.css" />
+  </head>
+  <body>
+    <form action="" class="form js-speaker-form">
+      <div class="form-field">
+        <label for="name">Имя</label>
+        <input
+          class="form-input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Володимир Миколайович"
+          autofocus
+        />
+      </div>
+      <div class="form-field">
+        <label for="tel">Телефон</label>
+        <input
+          class="form-input"
+          type="tel"
+          name="tel"
+          placeholder="+30**-000-00-00"
+        />
+      </div>
+
+      <div class="form-field">
+        <label for="mail">Почта</label>
+        <input
+          class="form-input"
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="my@mail.com"
+        />
+      </div>
+
+      <div role="group" class="group">
+        <h2 class="group-title">Тема доклада</h2>
+        <!-- Может быть и <b> взависимости от 
+          написаного если быберете тему доклада тогда <b> -->
+
+        <ul class="topic-options">
+          <!-- Делаем если это список опций -->
+          <li>
+            <input type="checkbox" name="topic" value="html" id="html" />
+            <label for="html">HTML</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="topic" value="css" id="css" />
+            <label for="css">CSS</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="topic" value="js" id="js" />
+            <label for="js">JS</label>
+          </li>
+        </ul>
+      </div>
+
+      <div role="group" class="group">
+        <h2 class="group-title">Уровень вашей экспертизы</h2>
+        <ul class="experience-options">
+          <li>
+            <input type="radio" name="experience" value="junior" id="junior" />
+            <label for="junior">Junior</label>
+          </li>
+          <li>
+            <input type="radio" name="experience" value="middel" id="middel" />
+            <label for="middel">Middel</label>
+          </li>
+          <li>
+            <input type="radio" name="experience" value="senior" id="senior" />
+            <label for="senior"> Senior</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="form-field">
+        <label for="date">Дата доклада</label>
+        <input type="datetime-local" name="date" id="date" class="date" />
+      </div>
+
+      <div class="form-field">
+        <label for="pdf">Загрузите копию доклада в pdf</label>
+        <input type="file" name="pdf" id="pdf" />
+      </div>
+
+      <div class="form-field">
+        <label for="comment">Оставить коментарий</label
+        ><textarea
+          name="comment"
+          id="comment"
+          rows="8"
+          placeholder="Уточните детали доклада"
+        ></textarea>
+      </div>
+
+      <div class="form-field">
+        <input type="checkbox" name="policy" id="policy" />
+        <label for="policy">Соглашаюсь на все, за еду</label>
+      </div>
+    </form>
+  </body>
+</html>
