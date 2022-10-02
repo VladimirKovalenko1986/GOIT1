@@ -1,0 +1,64 @@
+.form {
+  padding: 20px;
+  margin: 20px;
+  width: 600px;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+
+  transform: translateY(-50%);
+  transition: transform 250ms linear;
+}
+
+.form-input {
+  width: 100%;
+  margin: 0;
+  padding: 10px 40px;
+  font: inherit;
+  border-radius: 3px;
+  border: 1px solid #2a2a2a;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  /* Силектор input когда в фокусе выбираем label потому label идет после*/
+  /* имя не возращается потому что  placeholder нет*/
+  color: red;
+
+  transform: translateY(-50px);
+}
+
+.form-input:placeholder-shown {
+  /* пока показывается  placeholder будет 
+  красным если начну что-то вводить будет белым*/
+  /* background-color: red; */
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+
+  transform: translateY(-50%);
+}
+
+.form-input:focus ~ .icon {
+  background-color: blue;
+  /* ~ выбирает всех соседа  */
+}
+
+.btn {
+  cursor: pointer;
+}
