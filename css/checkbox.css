@@ -1,0 +1,49 @@
+li {
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  /* Для скрытия можно применить visualy hidden */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* сбрасывает все оформление от браузера, 
+  аписываем несколько потому что для каждого браузера могут быть разные */
+  position: absolute;
+  /* Мы полностью визуально избавляемся от него не кому не мешает*/
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  /* outline: 1px solid black; */
+}
+
+.checkbox-icon {
+  margin-right: 10px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.checkbox:checked + .checkbox-icon {
+  border-color: blue;
+  background-color: blue;
+  background-image: url("../img/icon-check.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  /* Для того чтобы залить бордер */
+}
+
+.anime {
+  transition: transform 250ms linear;
+}
+
+.checkbox:checked ~ .anime {
+  transform: translateX(20px);
+  /* Передвижение по оси x */
+}
