@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/bem.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="" class="logo"
+        ><img
+          src="./img/Logo1.svg"
+          alt="логотип компании Технокряк"
+          class="logo__image"
+        /><span class="logo__text">Технокряк</span></a
+      >
+      <ul class="site-nav">
+        <li class="site-nav__item">
+          <a href="" class="site-nav__link site-nav__link--actine"
+            ><span class="site-nav__icon">Иконка</span>
+            <span class="site-nav__text">О нас</span></a
+          >
+        </li>
+        <li class="site-nav__item">
+          <a href="" class="site-nav__link site-nav__link--actine"
+            ><span class="site-nav__icon">Иконка</span>
+            <span class="site-nav__text">Портфолио</span></a
+          >
+        </li>
+        <li class="site-nav__item">
+          <a href="" class="site-nav__link site-nav__link--actine"
+            ><span class="site-nav__icon">Иконка</span>
+            <span class="site-nav__text">Контакты</span></a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <ul class="card-set">
+      <li class="card-set__item">
+        <article class="product">
+          <!-- Делаем отдельным блоком -->
+          <img src="./img/footer.png" alt="" class="product__image" />
+          <div class="product__meta">
+            <h3 class="product__name">Название продукта</h3>
+            <p class="product-price">193 кредита</p>
+            <button class="product-button">В корзину</button>
+          </div>
+        </article>
+      </li>
+      <li class="card-set__item">
+        <article class="product">
+          <!-- Делаем отдельным блоком -->
+          <img src="./img/footer.png" alt="" class="product__image" />
+          <div class="product__meta">
+            <h3 class="product__name">Название продукта</h3>
+            <p class="product-price">193 кредита</p>
+            <button class="product-button">В корзину</button>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+    <p class="notification notification--success">
+      Пополнения счета выполнено
+      <span class="notification__icon notification__icon--append"></span>
+    </p>
+    <!-- Добовляем модификатор успеха notification--success если мы хотим поменять цвет или заливку -->
+    <p class="notification notification--warning">
+      <span class="notification__icon notification__icon--prepend"></span>
+      Внимание, будут изменены тарифы
+    </p>
+    <p class="notification notification--error">Ошибка проведения транзакции</p>
+
+    <button class="button">
+      <span class="button__icon">Иконка</span>
+      <span class="button__label">Текст кнопки</span>
+    </button>
+
+    <footer class="page__footer">
+      <a href="" class="logo"
+        ><img
+          src="./img/Logo1.svg"
+          alt="логотип компании Технокряк"
+          class="logo__image"
+        /><span class="logo__text">Технокряк</span></a
+      >
+    </footer>
+
+    <section class="panel">
+      <h2 class="panel__title">Рекомендуемый</h2>
+      <ul class="card-set">
+        <li class="card-set__item">
+          <article class="product">
+            <!-- Делаем отдельным блоком -->
+            <img src="./img/footer.png" alt="" class="product__image" />
+            <div class="product__meta">
+              <h3 class="product__name">Название продукта</h3>
+              <p class="product-price">193 кредита</p>
+              <button class="product-button">В корзину</button>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2 class="panel__title">Новые поступления</h2>
+      <ul class="card-set">
+        <li class="card-set__item">
+          <article class="product">
+            <!-- Делаем отдельным блоком -->
+            <img src="./img/footer.png" alt="" class="product__image" />
+            <div class="product__meta">
+              <h3 class="product__name">Название продукта</h3>
+              <p class="product-price">193 кредита</p>
+              <button class="product-button">В корзину</button>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
