@@ -1,0 +1,190 @@
+// $color: red;
+// $main-width: 100px;
+// // Переменные
+
+// body {
+//   color: aqua;
+//   background-color: $color;
+//   width: $main-width;
+// }
+
+// .section {
+//   color: red;
+
+//   &:hover {
+//     color: blue;
+//   }
+// }
+
+// .section__text {
+//   color: aqua;
+
+//   &--red {
+//     color: aquamarine;
+//     // добовляем модификатор
+//   }
+// }
+
+// .section__title {
+//   color: tomato;
+// }
+
+.box {
+  background-color: red;
+}
+
+.button {
+  background-color: teal;
+
+  &:hover,
+  &:focus {
+    color: blue;
+  }
+  .box:hover & {
+    background-color: tomato;
+  }
+}
+
+// pleacholder
+%natification {
+  // ставим % (pleacholder) тогда не нужен
+  //   базовый селектор и добавлчем к каждому элементу этим элементом
+  background-color: #fff;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.natification-error {
+  @extend %natification;
+  //   применяем до базавого стиля
+  background-color: red;
+}
+
+.natification-success {
+  @extend %natification;
+  background-color: green;
+}
+
+//Mix @mixin имя (параметры) {
+// совйства }
+
+@mixin bordred($color) {
+  border: 1px solid $color;
+  //   Переменная будет действитель
+}
+// задаем миксин который в scc не видно
+
+p {
+  @include bordred(green);
+  //Задаем @include и саму функцию
+  // Можно записать переменную в скобочке
+}
+
+div {
+  @include bordred(yellow);
+}
+
+@mixin bordred($color) {
+  border-top: 1px solid $color;
+  border-bottom: 1px solid $color;
+}
+
+p {
+  @include bordred(tomato);
+}
+
+div {
+  @include bordred(red);
+}
+
+// Переменные через запятые
+
+@mixin bordred($color: black, $type: solid) {
+  // после двоеточий значения по умолчанию, если мы не
+  //   дадим каких-то значений будут по умолчанию
+  border-top: 1px $type $color;
+  border-bottom: 1px $type $color;
+}
+
+p {
+  @include bordred(tomato, solid);
+}
+
+div {
+  @include bordred(red, dashed);
+}
+
+div {
+  @include bordred($type: dashed);
+  //   Если мы хотим передать только выбраное значение
+}
+
+//pleasholder для центрирования
+%centeredFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  @extend %centeredFlex;
+}
+
+div {
+  @extend %centeredFlex;
+}
+
+// Миксин центрируем по центру
+
+@mixin centeredFlexx() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  @include centeredFlexx();
+}
+
+@mixin centeredFlexxx($type: flex) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  @include centeredFlexxx(inline-flex);
+  //   Можем подставлять любое значение
+}
+
+div {
+  @include centeredFlexxx();
+  //   Если не указать значение flex стоит по умолчанию
+}
+
+// Перечисление
+// $icons: "facebook", "github", "linkedin", "twitter";
+
+// @each $iconName in $icons {
+//   .icon-#{$iconName} {
+//     color: red;
+//     background-image: url("../img/#{$iconName}.svg");
+//   }
+// }
+
+$icons: "facebook", "github", "linkedin", "twitter";
+
+@mixin generateIcons($iconList) {
+  @each $iconName in $iconList {
+    .icon-#{$iconName} {
+      background-image: url("../img/#{$iconName}.svg");
+    }
+  }
+}
+
+@include generateIcons($icons);
+// Можно сделать несколько списков, только перебирайте имена
+
+@include generateIcons($icons);
+
+@include generateIcons($icons);
