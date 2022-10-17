@@ -1,0 +1,25 @@
+.reviews {
+  @media screen and (max-width: 767px) {
+    display: none;
+    // скрываем секцию появится она когда
+    // будет разрешение будет больше указаного
+  }
+}
+
+.reviews-set {
+  display: flex;
+  @extend %list;
+}
+
+.reviews-item {
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+  font-style: 48px;
+
+  width: 33.3333%;
+}
+
+$colors: "#795548", "#607d8b", "#7b1fa2";
+
+@include colorize($colors, ".reviews-item");

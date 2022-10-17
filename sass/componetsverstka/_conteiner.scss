@@ -1,0 +1,26 @@
+.conteiner {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+  //  Задаем базовые стили которые будут
+  //  применятся а при @media могут менятся @media screen and (min-width: 480px) {
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    // Если шрина санет болше 480 я
+    // задаю чтобы она стала фиксированая на 480
+    // а до 480 она гибкая тянется
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    // когда он достигает размера 768 и больше
+    // правило перекрыввет предыдущее
+  }
+
+  @media screen and (min-width: 1140px) {
+    width: 1140px;
+  }
+}

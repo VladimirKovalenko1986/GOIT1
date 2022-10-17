@@ -1,0 +1,9 @@
+.company-logo {
+  @include linkstile;
+
+  padding: 10px;
+  font-style: 20px;
+  font-weight: 500;
+  background-color: #03a9f4;
+  color: #fff;
+}
