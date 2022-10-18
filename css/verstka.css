@@ -25,40 +25,8 @@
   min-height: 80px;
 }
 
-.menu-button {
-  display: inline-flex;
+body {
   margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
-.menu-conteiner {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 500px;
-  background-color: palegoldenrod;
-  padding: 20px;
-  text-align: center;
-  font-style: 20px;
-}
-.menu-conteiner.is-open {
-  display: block;
 }
 
 .conteiner {
@@ -66,7 +34,6 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid tomato;
 }
 @media screen and (min-width: 480px) {
   .conteiner {
@@ -183,4 +150,67 @@
 
 .reviews-item:nth-child(3) {
   background-color: #7b1fa2;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-conteiner {
+  background-color: palegoldenrod;
+  padding: 20px;
+  text-align: center;
+  font-style: 20px;
+}
+@media screen and (max-width: 767px) {
+  .menu-conteiner {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .menu-conteiner.is-open {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-conteiner {
+    display: flex;
+  }
+}
+
+.navigation,
+.contacts {
+  height: 40px;
+  width: 50px;
+}
+
+.navigation {
+  outline: 1px solid teal;
+}
+
+.contacts {
+  outline: 1px solid orange;
 }/*# sourceMappingURL=verstka.css.map */

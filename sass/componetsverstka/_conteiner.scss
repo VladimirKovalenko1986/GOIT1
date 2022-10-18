@@ -1,9 +1,13 @@
+body {
+  margin: 0;
+}
+
 .conteiner {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid tomato;
+  // outline: 1px solid tomato;
   //  Задаем базовые стили которые будут
   //  применятся а при @media могут менятся @media screen and (min-width: 480px) {
 
